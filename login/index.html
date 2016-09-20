@@ -1,13 +1,24 @@
 <html>
 <head>
-	<title>MagicPlaylist/</title>
+  <title>MagicPlaylist/</title>
 </head>
 <body>
 <script type="text/javascript">
 function session() {
   localStorage.magic_token_expires = Math.round(new Date().getTime()/1000) + 3550;
   localStorage.magic_token = window.location.search.split('=')[1];
-  window.close();
+
+
+  const isFacebookApp = () => {
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+    return (ua.indexOf('FBAN') > -1) || (ua.indexOf('FBAV') > -1);
+  };
+
+  if (isFacebookApp()) {
+    window.location = 'http://localhost:8080/#/connect/fb';
+  } else {
+    window.close();
+  }
 }
 session();
 </script>
