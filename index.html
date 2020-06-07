@@ -53,27 +53,16 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
   <link rel="stylesheet" type="text/css" href="dist/slick-theme.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="dist/style.css?v3.97">
-  
-  <script>
-  window['_fs_debug'] = false;
-  window['_fs_host'] = 'fullstory.com';
-  window['_fs_org'] = 'NMNCY';
-  window['_fs_namespace'] = 'FS';
-  (function(m,n,e,t,l,o,g,y){
-      if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-      g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
-      o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_host+'/s/fs.js';
-      y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-      g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
-      g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
-      g.log = function(a,b) { g("log", [a,b]) };
-      g.consent=function(a){g("consent",!arguments.length||a)};
-      g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-      g.clearUserCookie=function(){};
-  })(window,document,window['_fs_namespace'],'script','user');
-  </script>
-   <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="90050c2b-c96e-4594-a234-df4622108a60";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+  <link rel="stylesheet" type="text/css" href="dist/style.css?v3.97">
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+	<script>
+		window.googletag = window.googletag || {cmd: []};
+		googletag.cmd.push(function() {
+		googletag.defineSlot('/2279220/top-search-banner', [[468, 60]], 'div-gpt-ad-1591483993250-0').addService(googletag.pubads());
+		googletag.pubads().enableSingleRequest();
+		googletag.enableServices();
+		});
+	</script>
 </head>
 <body>
   <div id="app"></div>
